@@ -15,7 +15,6 @@ cityInput = () => {
     const city = document.getElementById('city-search-field').value;
     getWeatherData(city)
     .then((response) => {
-        // console.log(response);
         showWeatherReport(response);
     })
     .catch((error) => {
